@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susin.qudong.activity.MyFabuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/fabu_back"
+            style="@style/top_back"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            style="@style/top_txt"
+            android:text="我的发布" />
+
+        <TextView
+            android:id="@+id/tv_find_ans_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要提问"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tv_yuanjiaojuzheng_white"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_answers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="我的提问"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_line" />
+
+        <RadioButton
+            android:id="@+id/rb_reply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="我的回复"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_nav_indicator"
+        android:layout_width="80dp"
+        android:layout_height="1dip"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="nav_desc"
+        android:scaleType="matrix" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:flipInterval="30" />
+
+        <include layout="@layout/include_nothing" />
+    </RelativeLayout>
+
+</LinearLayout>

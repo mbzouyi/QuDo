@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susin.qudong.activity.GradeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/grade_back"
+            style="@style/top_back"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            style="@style/top_txt"
+            android:text="我的特权" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="离升为VIP2还差5成长值"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="升级规则"
+                android:textColor="@color/blue_dan"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:progress="80"
+            android:layout_marginRight="8dp"
+            android:progressDrawable="@drawable/progressbar"
+            android:visibility="visible"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="V2"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_find"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="等级奖励"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/icon_gift"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rb_answers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="赏金兑换"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/icon_reward"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rb_answers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="VIP铭牌"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/icon_mingpai"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="成长特权"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/icon_graw"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_nav_indicator"
+        android:layout_width="30dp"
+        android:layout_height="1dip"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="nav_desc"
+        android:scaleType="matrix" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:flipInterval="30" />
+
+</LinearLayout>

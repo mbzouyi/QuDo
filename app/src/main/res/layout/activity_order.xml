@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susin.qudong.activity.OrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/order_back"
+            style="@style/top_back"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            style="@style/top_txt"
+            android:text="订单" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_daifukuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@drawable/textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_daifuwu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待服务"
+            android:textColor="@drawable/textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_daipingjia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待评价"
+            android:textColor="@drawable/textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_hislist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="历史订单"
+            android:textColor="@drawable/textcolor_selector" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/app_bg"/>
+
+        <include layout="@layout/include_nothing" />
+    </RelativeLayout>
+
+</LinearLayout>

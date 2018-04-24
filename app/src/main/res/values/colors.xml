@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eb5d5b</color>
+    <color name="colorPrimaryDark">#eb5d5b</color>
+    <color name="colorAccent">#eb5d5b</color>
+
+    <color name="transparent">#00000000</color>		<!-- 透明色 -->
+    <color name="half_transparent">#e0000000</color>		<!-- 半透明色 -->
+    <color name="half_transparent2">#66333333</color>		<!-- 半透明色 -->
+    <color name="toolbar_normal">#ffffff</color>	<!-- 低栏默认颜色 -->
+    <color name="app_bg">#f6f1eb</color>		<!-- app背景颜色 -->
+
+    <color name="red_black">#eb5d5b</color>		<!-- 暗huozhuan红色 主题色-->
+    <color name="red_dan">#F76B6A</color>		<!-- dan红色 -->
+    <color name="color_main_tab_txt">#999999</color>		<!-- 底部栏字体默认颜色 -->
+    <color name="black_all">#000000</color>			<!--全黑色 -->
+    <color name="black">#333333</color>			<!--黑色 -->
+    <color name="black_mid">#666666</color>			<!--中黑色 -->
+    <color name="black_dan">#757575</color>			<!--淡黑色 -->
+    <color name="gray">#999999</color>			<!--灰色 -->
+    <color name="white">#ffffff</color>			<!--白色 -->
+    <color name="lightgray">#D3D3D3</color>		<!--亮灰色 -->
+    <color name="blue">#0000FF</color>			<!--蓝色   -->
+    <color name="blue_dan">#4682B4</color>			<!-- dan蓝色   -->
+    <color name="green">#4CDA64</color>			<!--绿色 -->
+    <color name="green_word">#f9af6e</color>			<!--绿色ziti -->
+    <color name="green_word2">#f89834</color>			<!--绿色ziti -->
+    <color name="green_status">#ff7b7b</color>			<!--绿色weizhifuziti -->
+    <color name="green_home">#fff143</color>			<!--绿色weizhifuziti -->
+    <color name="pay_status">#75d29a</color>			<!--weizhifuziti -->
+    <color name="ivory">#FFFFF0</color>			<!--象牙色 -->
+    <color name="gray_pay">#eeeff3</color>			<!--支付dialog灰色 -->
+    <color name="gray_line">#e7e6eb</color>			<!--分割线灰色 -->
+    <color name="line">#f0f0f0</color>			<!--分割线 -->
+</resources>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.susin.qudong.fragment.FindFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/main_find_back"
+            style="@style/top_back" />
+
+        <TextView
+            style="@style/top_txt"
+            android:text="发现" />
+
+        <ImageView
+            android:id="@+id/main_find_right"
+            android:src="@drawable/icon_share"
+            style="@style/top_right" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_find"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_answers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_find_ans"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="问与答"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_line" />
+
+        <RadioButton
+            android:id="@+id/rb_refer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_find_xixun"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="行业资讯"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_nav_indicator"
+        android:layout_width="80dp"
+        android:layout_height="1dip"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="nav_desc"
+        android:scaleType="matrix" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:flipInterval="30" />
+
+</LinearLayout>
